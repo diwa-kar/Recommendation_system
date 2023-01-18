@@ -1,5 +1,6 @@
 import React from "react"
 import "./style.css"
+import { Text } from "@nextui-org/react";
 
 const Footer = () => {
   return (
@@ -7,7 +8,18 @@ const Footer = () => {
       <footer>
         <div className='container grid2'>
           <div className='box'>
-            <h1>Bonik</h1>
+            {/* <h1>Bonik</h1> */}
+            <Text
+            h1
+            size={45}
+            className="dq-head"
+            css={{
+              textGradient: "45deg, $red600 , $black 80%",
+            }}
+            weight="bold"
+          >
+           DigiVerZ
+          </Text>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
             <div className='icon d_flex'>
               <div className='img d_flex'>
@@ -44,8 +56,8 @@ const Footer = () => {
           <div className='box'>
             <h2>Contact Us</h2>
             <ul>
-              <li>70 Washington Square South, New York, NY 10012, United States </li>
-              <li>Email: uilib.help@gmail.com</li>
+              <li>136, Arcot Rd, AVM Nagar, Saligramam, Chennai, Tamil Nadu 600093, India </li>
+              <li>Email: support@digiverz.com</li>
               <li>Phone: +91 6383308393</li>
             </ul>
           </div>

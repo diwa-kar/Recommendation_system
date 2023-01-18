@@ -1,6 +1,7 @@
 import React from "react"
 import logo from "../../components/assets/images/logo.svg"
 import { Link } from "react-router-dom"
+import { Text } from "@nextui-org/react";
 
 const Search = ({ CartItem }) => {
   // fixed Header
@@ -14,7 +15,19 @@ const Search = ({ CartItem }) => {
       <section className='search'>
         <div className='container c_flex'>
           <div className='logo width '>
-            <img src={logo} alt='' />
+            {/* <img src={logo} alt='' /> */}
+            <Text
+            h1
+            size={45}
+            className="dq-head"
+            css={{
+              textGradient: "45deg, $red600 -10%, $black 80%",
+            }}
+            weight="bold"
+          >
+           DigiVerZ
+          </Text>
+
           </div>
 
           <div className='search-box f_flex'>
